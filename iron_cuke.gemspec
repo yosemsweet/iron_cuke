@@ -1,17 +1,17 @@
 # -*- encoding: utf-8 -*-
 $:.push File.expand_path("../lib", __FILE__)
-require "cuke-iron-worker/version"
+require "iron_cuke/version"
 
 Gem::Specification.new do |s|
-  s.name        = "cuke-iron-worker"
-  s.version     = CukeIronWorker::VERSION
+  s.name        = "iron_cuke"
+  s.version     = IronCuke::VERSION
   s.authors     = ["Yosem Sweet"]
   s.email       = ["yosem.sweet@gmail.com"]
   s.homepage    = ""
   s.summary     = %q{A small engine to help you mock out iron worker while using cucumber}
-  s.description = %q{cuke-iron-worker provides a set of steps and Cucumber world objects you can use to simulate IronWorker while running cucumber tests.}
+  s.description = %q{iron_cuke provides a set of steps and Cucumber world objects you can use to simulate IronWorker while running cucumber tests.}
 
-  s.rubyforge_project = "cuke-iron-worker"
+  s.rubyforge_project = "iron_cuke"
 
   s.files         = `git ls-files`.split("\n")
   s.test_files    = `git ls-files -- {test,spec,features}/*`.split("\n")

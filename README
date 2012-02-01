@@ -1,4 +1,4 @@
-Development Notes:
+Development Notes and Todos:
 
 Needs to work with cucumber and rspec
 
@@ -11,6 +11,8 @@ Rspec integration test not needed, just unit test
 
 Basic model
 
+IronCuke module encapsulates access to ScheduledWorkerQueue
+
 Scheduled Workers:
 ScheduledWorkerQueue - A hash where each worker is keyed by the time they run.
 Functions
@@ -21,3 +23,5 @@ Cancel - takes schedule_id and removes from schedule
 Workers
 stub worker.schedule to write to scheduled workers
 stub IronWorker.service.cancel_schedule to delegate to ScheduledWorkerQueue
+
+Gem developed by Yosem Sweet and released (whenever that is) under the MIT license
