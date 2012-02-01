@@ -1,28 +1,39 @@
 require "iron_cuke/version"
+require 'digest/md5'
+
+class QueueItem
+	attr_accessor :worker, :options, :id
+	def initialize(worker, options)
+		@worker = worker
+		@options = options
+		@id = Digest::MD5.hexdigest(self.worker.to_s + self.options.to_s)
+	end
+end
+
+
+module ScheduledQueue
+	
+	def schedules
+		scheduledQueue.values.map { |data| data.worker }
+	end
+	
+	def schedule(worker, schedule_options)
+		scheduledQueue[schedule_options[:start_at]] = QueueItem.new(worker, schedule_options)
+	end
+	
+	def cancel_schedule(scheduled_task_id)
+		
+	end
+	
+	protected
+	def scheduledQueue
+		@scheduledQueue ||= Hash.new
+	end
+end
 
 module IronCuke
+	extend ScheduledQueue
+	
 	def self.run
-	end
-	
-	# schedule: hash of scheduling options that can include:
-	#     Required:
-	#     - start_at:      Time of first run - DateTime or Time object.
-	#     Optional:
-	#     - run_every:     Time in seconds between runs. If ommitted, task will only run once.
-	#     - delay_type:    Fixed Rate or Fixed Delay. Default is fixed_delay.
-	#     - end_at:        Scheduled task will stop running after this date (optional, if ommitted, runs forever or until cancelled)
-	#     - run_times:     Task will run exactly :run_times. For instance if :run_times is 5, then the task will run 5 times.
-	#
-	def self.schedule(worker, schedule)
-		
-	end
-	
-	def self.cancel_schedule(scheduled_task_id)
-		
-	end
-	
-	def self.schedules
-		
-	end
-
+	end	
 end
