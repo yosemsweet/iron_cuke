@@ -1,7 +1,9 @@
 require "iron_cuke/version"
 
 module IronCuke
-	#
+	def self.run
+	end
+	
 	# schedule: hash of scheduling options that can include:
 	#     Required:
 	#     - start_at:      Time of first run - DateTime or Time object.
@@ -14,4 +16,13 @@ module IronCuke
 	def self.schedule(worker, schedule)
 		
 	end
+	
+	def self.cancel_schedule(scheduled_task_id)
+		
+	end
+	
+	def self.schedules
+		
+	end
+
 end
