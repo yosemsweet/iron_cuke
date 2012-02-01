@@ -17,8 +17,8 @@ Scheduled Workers:
 ScheduledWorkerQueue - A hash where each worker is keyed by the time they run.
 Functions
 run - runs all workers before current time (should this be run_with_time?)
-schedule - takes a worker, a time, and an optional repeat options (default to run once). Adds the worker into the hash at time. returns a schedule_id (hashed value?) identifying the scheduled worker
-cancel - takes schedule_id and removes from schedule
+schedule - takes a worker and schedule parameters (equivalent to IronWorker service). Adds the worker into the hash at time. returns an array response equivalent to posting to iron worker. The response includes a scheduled_task_id identifying the scheduled worker
+cancel - takes scheduled_task_id and removes from schedule
 
 Workers
 stub worker.schedule to write to scheduled workers
