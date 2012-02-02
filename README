@@ -24,4 +24,11 @@ Workers
 stub worker.schedule to write to scheduled workers
 stub IronWorker.service.cancel_schedule to delegate to ScheduledWorkerQueue
 
+## Contribute
+* Fork the project.
+* Test drive your feature addition or bug fix.  Specs make all the difference here.
+* Commit, do not mess with Rakefile, version, or ChangeLog.
+  (if you want to have your own version, that is fine but bump version in a commit by itself I can ignore when I pull)
+* Send me a pull request. Bonus points for topic branches.
+
 Gem developed by Yosem Sweet and released (whenever that is) under the MIT license
