@@ -20,10 +20,8 @@ Gem::Specification.new do |s|
 
   # specify any dependencies here; for example:
 	s.add_dependency "iron_worker"
-	s.add_dependency "rest-client"
-	s.add_dependency "typhoeus"
 	s.add_dependency "cucumber", ">=0.8"
-	s.add_dependency "rake"
+	s.add_dependency "json"
 
 	s.add_development_dependency "require_all"
 	s.add_development_dependency "rack"
