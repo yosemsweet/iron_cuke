@@ -66,10 +66,11 @@ describe IronCuke do
 		it "should call run for each worker with a start at time before Time.now" do
 			@past_worker.should_receive(:run)
 			@present_worker.should_receive(:run)
-			puts "===== workers ====="
-			puts @past_worker
-			puts @present_worker
-			puts "==================="		
+			IronCuke.run(current_time)
+		end
+		
+		it "should call run for each worker with a start at time before Time.now" do
+			@future_worker.should_not_receive(:run)
 			IronCuke.run(current_time)
 		end
 	end
