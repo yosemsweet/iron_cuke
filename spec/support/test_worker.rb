@@ -1,4 +1,4 @@
-require "iron_worker/base"
+require "iron_worker"
 
 class TestWorker < IronWorker::Base
 
