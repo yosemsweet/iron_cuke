@@ -5,3 +5,4 @@
 ** every x period
 * Instead of creating a bunch of mixins we should implement an IronWorker::TestService and have IronWorker.service return that. - hard
 * Create a more dynamic response system. Right now it is basically just hardcoded. - easy
+* Set up generators to create an iron_cuke.rb in cucumber features/support if present
