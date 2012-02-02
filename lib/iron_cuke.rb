@@ -8,14 +8,16 @@ module ScheduledQueue
 	end
 	
 	def schedule(worker, schedule_options)
-		Raise "Unimplemented" if schedule_options[:run_times] > 1
+		Raise NotImplementedError if schedule_options[:run_times] > 1
 		
 		scheduled_queue[schedule_options[:start_at]] ||= []
-		scheduled_queue[schedule_options[:start_at]] << QueueItem.new(worker, schedule_options)
+		item = QueueItem.new(worker, schedule_options)
+		scheduled_queue[schedule_options[:start_at]] << item
+		response = create_response(item)
 	end
 	
 	def cancel_schedule(scheduled_task_id)
-		
+		Raise NotImplementedError
 	end
 	
 	def clear
@@ -23,8 +25,21 @@ module ScheduledQueue
 	end
 	
 	protected
+	
 	def scheduled_queue
 		@scheduled_queue ||= Hash.new
+	end
+	
+	def create_response(item)
+		{
+		    "msg" => "Scheduled",
+		    "schedules" => [
+		        {
+		            "id" => item.id
+		        }
+		    ],
+		    "status_code" => 200
+		}
 	end
 end
 

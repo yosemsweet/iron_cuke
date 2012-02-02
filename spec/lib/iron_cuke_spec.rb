@@ -19,8 +19,17 @@ describe IronCuke do
 				expect {
 					IronCuke.schedule(worker, {:start_at => Time.now + 1.year, :run_times => 1})
 				}.to change{IronCuke.schedules.count}.by(1)
-			end		  
+			end
+			
+			it "should return a response hash include status_code and list of scheduled_ids" do
+			  worker = TestWorker.new
+				response = IronCuke.schedule(worker, {:start_at => Time.now, :run_times => 1})
+				response.should have_key "status_code"
+				response.should have_key "schedules"
+				response["schedules"].each do |s| s.should have_key "id" end
+			end
 		end
+		
 		context "scheduling two workers at the same time" do
 		  it "should schedule them both" do
 		    worker_one, worker_two = [TestWorker.new, TestWorker.new]

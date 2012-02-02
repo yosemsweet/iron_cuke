@@ -9,10 +9,21 @@ describe "IronWorker::Base.schedule" do
 	let!(:worker) { TestWorker.new }
 	
   it "should add the worker to IronCuke.schedules" do
-		worker.schedule(:start_at => Time.now, :run_times => 1)
-		# 	
-		#     expect {
-		# 	worker.schedule(:start_at => Time.now, :run_times => 1)
-		# }.to change{IronCuke.schedules.count}.by(1)
+		expect {
+				worker.schedule(:start_at => Time.now, :run_times => 1)
+		}.to change{IronCuke.schedules.count}.by(1)
   end
+
+  it "should set worker.response" do
+		expect {
+				worker.schedule(:start_at => Time.now, :run_times => 1)
+		}.to change{worker.response}
+  end
+
+  it "should set worker.schedule_id" do
+		expect {
+				worker.schedule(:start_at => Time.now, :run_times => 1)
+		}.to change{worker.schedule_id}
+  end
+
 end

@@ -7,7 +7,7 @@ module IronWorker
 	class Base
 		def schedule(options)
 			@response = IronCuke.schedule(self, options)
-			@schedule_id = "foo" #TODO: This needs to get set properly
+			@schedule_id = @response["schedules"][0]["id"]
 		end
 	end
 end
