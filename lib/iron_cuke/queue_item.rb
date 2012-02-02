@@ -1,7 +1,7 @@
 require 'digest/md5'
 
 class QueueItem
-	attr_accessor :worker, :options, :id
+	attr_reader :worker, :options, :id
 	def initialize(worker, options)
 		@worker = worker
 		@options = options
