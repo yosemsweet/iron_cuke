@@ -36,7 +36,7 @@ module IronCuke
 		to_execute = scheduled_queue.keys.select { |run_at| run_at <= time }
 		to_execute.each do |k|
 			begin
-				scheduled_queue[k].each { |data| data.worker.run }
+				scheduled_queue[k].each { |data| data.worker.run_local }
 				scheduled_queue.delete(k)
 			rescue Exception => e
 				puts e
