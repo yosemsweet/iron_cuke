@@ -16,15 +16,19 @@ describe IronCuke do
 		  it "should add a worker to schedules" do
 				worker = TestWorker.new
 
-				#expect not working here - revisit later
-				scheduled_count = IronCuke.schedules.count
-				IronCuke.schedule(worker, {:start_at => Time.now + 1.year, :run_times => 1})
-				IronCuke.schedules.count.should == scheduled_count +  1
+				expect {
+					IronCuke.schedule(worker, {:start_at => Time.now + 1.year, :run_times => 1})
+				}.to change{IronCuke.schedules.count}.by(1)
 			end		  
 		end
 		context "scheduling two workers at the same time" do
 		  it "should schedule them both" do
-		    
+		    worker_one, worker_two = [TestWorker.new, TestWorker.new]
+				time = Time.now
+				expect {
+					IronCuke.schedule(worker_one, {:start_at => time, :run_times => 1})
+					IronCuke.schedule(worker_two, {:start_at => time, :run_times => 1})
+				}.to change{IronCuke.schedules.count}.by(2)
 		  end
 		end
 	end

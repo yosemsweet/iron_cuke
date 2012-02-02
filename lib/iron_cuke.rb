@@ -6,7 +6,7 @@ class QueueItem
 	def initialize(worker, options)
 		@worker = worker
 		@options = options
-		@id = Digest::MD5.hexdigest(self.worker.to_s + self.options.to_s)
+		@id = Digest::MD5.hexdigest(self.worker.inspect + self.options.inspect)
 	end
 end
 

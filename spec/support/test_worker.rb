@@ -3,8 +3,8 @@ require "iron_worker/base"
 class TestWorker < IronWorker::Base
 
   def run
-		puts "Test worker run " + self
-		puts " in Local environment" if self.is_local?
+		log = Logger.new("iron_cuke.log", 1, 10240)
+		log.info "Test worker run " + self.inspect
   end
 
 end
