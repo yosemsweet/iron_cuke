@@ -12,6 +12,7 @@ module ScheduledQueue
 		scheduled_queue[schedule_options[:start_at]] ||= []
 		item = QueueItem.new(worker, schedule_options)
 		scheduled_queue[schedule_options[:start_at]] << item
+		worker.schedule_id = item.id
 		response = create_response(item)
 	end
 	

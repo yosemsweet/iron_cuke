@@ -29,6 +29,23 @@ describe "IronWorker::Base.schedule" do
 		expect {
 			worker.schedule(:start_at => Time.now, :run_times => 1)
 		}.to change{worker.schedule_id}
+		
+		worker.schedule_id.should_not be_nil
   end
+
+	it "should add a worker with the same schedule id in to IronCuke.schedules" do
+		worker.schedule(:start_at => Time.now, :run_times => 1)
+		
+		IronCuke.schedules.select { |s| s.schedule_id == worker.schedule_id }.should_not be_empty
+	end
+
+	context "response" do
+	  let(:response) { worker.schedule(:start_at => Time.now, :run_times => 1) }
+		it { response["status_code"].should == 200 }
+		it { response.should have_key "schedules" }
+		it { response["schedules"].should be_kind_of Array }
+		it { response["schedules"][0].should have_key "id" }
+		it { response["schedules"][0]["id"].should_not be_nil }
+	end
 
 end

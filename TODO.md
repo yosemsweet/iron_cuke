@@ -1,5 +1,6 @@
 * Create specs for QueueItems - easy
 * Create specs for ScheduledQueue - easy
+* Create spec for TestService - easy and critical
 * Support schedule options of: - medium
 ** run_times > 1
 ** every x period
