@@ -17,7 +17,7 @@ module ScheduledQueue
 	end
 	
 	def cancel_schedule(scheduled_task_id)
-		Raise NotImplementedError
+		scheduled_queue.each { |k,v| v.delete_if{ |data| data.id == scheduled_task_id  } }
 	end
 	
 	def clear

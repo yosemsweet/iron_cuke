@@ -17,6 +17,11 @@ module IronWorker
 				end
 				IronCuke.schedule(worker, options)
 			end
+			
+			def cancel_schedule(scheduled_task_id, options={})
+				raise "Must include a schedule id." if scheduled_task_id.blank?
+				IronCuke.cancel_schedule(scheduled_task_id)
+			end
 		end
 	end
 end

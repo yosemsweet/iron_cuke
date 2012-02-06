@@ -60,6 +60,33 @@ describe IronCuke do
 		end
 	end
 	
+	context "::cancel_schedule" do
+		let!(:worker) { TestWorker.new }
+		
+		before(:each) do
+			IronCuke.schedule(worker, {:start_at => Time.now + 1.year, :run_times => 1})
+		end
+		
+		after(:each) do
+			IronCuke.clear
+		end
+
+		context "with a schedule_id that is currently scheduled" do
+		  it "should reduce the number of workers in schedules" do
+				expect {
+					IronCuke.cancel_schedule(worker.schedule_id)
+				}.to change{IronCuke.schedules.count}.by(-1)
+			end
+			
+			it "should cause worker to no longer be included in schedules" do
+				IronCuke.schedules.should include worker
+				IronCuke.cancel_schedule(worker.schedule_id)
+				IronCuke.schedules.should_not include worker
+			end
+		end
+	
+	end
+	
 	context "::run" do
 		let(:current_time) { Time.now }
 		before(:each) do
