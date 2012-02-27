@@ -8,7 +8,7 @@ Gem::Specification.new do |s|
   s.authors     = ["Yosem Sweet"]
   s.email       = ["yosem.sweet@gmail.com"]
   s.homepage    = ""
-  s.summary     = %q{A small engine to help you mock out iron worker while using cucumber}
+  s.summary     = %q{A small gem to help you mock out iron worker while using cucumber}
   s.description = %q{iron_cuke provides a set of steps and Cucumber world objects you can use to simulate IronWorker while running cucumber tests.}
 
   s.rubyforge_project = "iron_cuke"
