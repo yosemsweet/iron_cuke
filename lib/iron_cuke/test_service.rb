@@ -23,5 +23,15 @@ module IronWorker
 				IronCuke.cancel_schedule(scheduled_task_id)
 			end
 		end
+		module Queue
+			def queue(name, data, options)
+				worker = name.classify.constantize.new
+				variables = JSON.parse(Base64.decode64(data[:attr_encoded])) if data[:attr_encoded].present?
+				variables.each do |k, v|
+					worker.instance_variable_set(k.to_sym, v)
+				end
+				IronCuke.queue(worker, options)
+			end
+		end
 	end
 end

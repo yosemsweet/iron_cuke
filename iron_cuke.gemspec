@@ -23,7 +23,6 @@ Gem::Specification.new do |s|
 	s.add_dependency "cucumber", ">=0.8"
 	s.add_dependency "json"
 
-	s.add_development_dependency "require_all"
 	s.add_development_dependency "rack"
 	s.add_development_dependency "bundler"
 	s.add_development_dependency "git"

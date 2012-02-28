@@ -1,10 +1,12 @@
 require "iron_cuke/version"
 require "iron_cuke/scheduled_queue"
+require "iron_cuke/queue"
 require "iron_cuke/test_service"
 
 
 module IronCuke
-	extend ScheduledQueue
+	extend IronCuke::ScheduledQueue
+	extend IronCuke::Queue
 	
 	def self.run(time = nil)
 		time ||= Time.now
@@ -18,4 +20,9 @@ module IronCuke
 			end
 		end
 	end	
+	
+	def self.clear
+		clear_queue
+		clear_schedules
+	end
 end
