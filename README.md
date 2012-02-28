@@ -28,17 +28,14 @@ I'm assuming you also have cucumber-rails and iron_worker gems installed, if not
   
 Now run:
   
-  bundle install
-
-I haven't build the iron_cuke generators yet, so you currently need to set it up by hand. Create `/features/support/iron_cuke.rb` and copy the following code into it:
-
-    require "iron_cuke"
-  
-    IronWorker.service.instance_eval do
-    	extend IronWorker::TestService::Schedule
-    end
+    bundle install
+    rails generate iron_cuke
 
 
+Basic Usage
+-----------
+
+Create and schedule/queue workers as normal. 
 
 Contribute
 ----------

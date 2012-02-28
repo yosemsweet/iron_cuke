@@ -10,6 +10,7 @@
 * Implement cancel_schedule
 * Implement schedules via TestService
 * Implement Queueing system
+** Base.queue options (priority and recursive)
 
 
 
