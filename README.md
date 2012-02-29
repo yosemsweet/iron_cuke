@@ -13,7 +13,7 @@ Help
 Installation
 ------------
 
-iron_cuke is a Rails 3 gem. It is currently tested against Rails 3.2 and should work with Rails 3.1 and 3.0
+iron_cuke is a Rails 3 gem. It is currently tested against Rails 3.1 and should work with Rails 3.2 and 3.0
 
 Include the gem in your Gemfile within the :test group:
 

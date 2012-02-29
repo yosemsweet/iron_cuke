@@ -47,5 +47,27 @@ describe "IronWorker::Base.queue" do
 		it { response["tasks"][0].should have_key "id" }
 		it { response["tasks"][0]["id"].should_not be_nil }
 	end
+	
+	context "with options" do
+	  context "with a priority" do
+	    context "with valid priorities" do
+	      valid_priorities = (0..2)
+				valid_priorities.each do |priority|
+					context "with priority #{priority}" do
+						let!(:options) { { :priority => priority} }
+						
+						it "queues the worker in priority #{priority}" do
+							lower_priority = [valid_priorities.min, priority - 1].max
+							higher_priority = [valid_priorities.max, priority + 1].min
+							
+							expect {
+								worker.queue(options)
+							}.to change{ IronCuke.queued(priority).count}.by(1) # and to_not change{ IronCuke.queued(lower_priority).count }
+						end					  
+					end
+				end
+	    end
+	  end
+	end
 
 end

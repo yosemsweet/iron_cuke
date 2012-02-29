@@ -1,0 +1,136 @@
+# Logfile created on 2012-02-01 18:56:13 -0800 by logger.rb/25413
+Test worker run #<TestWorker:0x00000101e265d8>
+Test worker run #<TestWorker:0x00000101e265b0>
+Test worker run #<TestWorker:0x00000101576910>
+Test worker run #<TestWorker:0x000001015768e8>
+Test worker run #<TestWorker:0x0000010138e6e8>
+Test worker run #<TestWorker:0x0000010138e6c0>
+Test worker run #<TestWorker:0x00000101421f10>
+Test worker run #<TestWorker:0x00000101421da8>
+Test worker run #<TestWorker:0x00000101bc16a8>
+Test worker run #<TestWorker:0x00000101bc1680>
+Test worker run #<TestWorker:0x00000101530ed8>
+Test worker run #<TestWorker:0x00000101530eb0>
+Test worker run #<TestWorker:0x000001014f0900>
+Test worker run #<TestWorker:0x000001014f08d8>
+Test worker run #<TestWorker:0x000001013f64f0>
+Test worker run #<TestWorker:0x000001013f64c8>
+Test worker run #<TestWorker:0x00000101402228>
+Test worker run #<TestWorker:0x00000101402200>
+Test worker run #<TestWorker:0x00000101466908>
+Test worker run #<TestWorker:0x000001014668e0>
+Test worker run #<TestWorker:0x00000101d84a58>
+Test worker run #<TestWorker:0x00000101d84a30>
+Test worker run #<TestWorker:0x000001029eb878>
+Test worker run #<TestWorker:0x000001029eb850>
+Test worker run #<TestWorker:0x000001016a2e38>
+Test worker run #<TestWorker:0x000001016a2e10>
+Test worker run #<TestWorker:0x00000101ca7928>
+Test worker run #<TestWorker:0x00000101ca7900>
+Test worker run #<TestWorker:0x00000102946af8>
+Test worker run #<TestWorker:0x00000102946ad0>
+Test worker run #<TestWorker:0x00000102b0e728>
+Test worker run #<TestWorker:0x00000102b0e700>
+Test worker run #<TestWorker:0x0000010122fe28>
+Test worker run #<TestWorker:0x0000010122fe00>
+Test worker run #<TestWorker:0x00000100cd4000>
+Test worker run #<TestWorker:0x00000100cd3fd8>
+Test worker run #<TestWorker:0x00000102a803b0>
+Test worker run #<TestWorker:0x00000102a80388>
+Test worker run #<TestWorker:0x00000102a4edb0>
+Test worker run #<TestWorker:0x00000102a4ed88>
+Test worker run #<TestWorker:0x000001028bd168>
+Test worker run #<TestWorker:0x000001028bd140>
+Test worker run #<TestWorker:0x000001012e5278>
+Test worker run #<TestWorker:0x000001012e5250>
+Test worker run #<TestWorker:0x0000010292ce28>
+Test worker run #<TestWorker:0x0000010292ce00>
+Test worker run #<TestWorker:0x00000100f4dae8>
+Test worker run #<TestWorker:0x00000100f4dac0>
+Test worker run #<TestWorker:0x00000102a4a418>
+Test worker run #<TestWorker:0x00000102a4a3f0>
+Test worker run #<TestWorker:0x0000010280f2e8>
+Test worker run #<TestWorker:0x0000010280f2c0>
+Test worker run #<TestWorker:0x0000010288ddf0>
+Test worker run #<TestWorker:0x0000010288ddc8>
+Test worker run #<TestWorker:0x00000101da8430>
+Test worker run #<TestWorker:0x00000101da8408>
+Test worker run #<TestWorker:0x000001017484c8>
+Test worker run #<TestWorker:0x000001017484a0>
+Test worker run #<TestWorker:0x0000010162fb68 @foo="bar">
+Test worker run #<TestWorker:0x0000010162fb18 @foo="bar">
+Test worker run #<TestWorker:0x000001013bc778 @foo="bar">
+Test worker run #<TestWorker:0x000001013bc728 @foo="bar">
+Test worker run #<TestWorker:0x00000100d7d920 @foo="bar">
+Test worker run #<TestWorker:0x00000100d7d8d0 @foo="bar">
+Test worker run #<TestWorker:0x00000102a94450 @foo="bar">
+Test worker run #<TestWorker:0x00000102a94400 @foo="bar">
+Test worker run #<TestWorker:0x00000102a891b8 @foo="bar">
+Test worker run #<TestWorker:0x00000102a89168 @foo="bar">
+Test worker run #<TestWorker:0x00000102beab60 @foo="bar">
+Test worker run #<TestWorker:0x00000102beab10 @foo="bar">
+Test worker run #<TestWorker:0x000001029b7d98 @foo="bar", @schedule_id="8d6d336eff37ab72bb263828da9eba7f">
+Test worker run #<TestWorker:0x000001029b7d48 @foo="bar", @schedule_id="d52604d0d4c172d4734a73f245ec025f">
+Test worker run #<TestWorker:0x00000102b4f340 @foo="bar">
+Test worker run #<TestWorker:0x00000102b4f2f0 @foo="bar">
+Test worker run #<TestWorker:0x0000010291f2a0 @foo="bar", @schedule_id="67d259334f141712bcbd9f827f7d79eb">
+Test worker run #<TestWorker:0x0000010291f250 @foo="bar", @schedule_id="67aa8a8dccd37f5329d6135ccc20df93">
+Test worker run #<TestWorker:0x00000102976528 @foo="bar", @schedule_id="39a4ce57f9ee992caf57350d25de51ea">
+Test worker run #<TestWorker:0x000001029764d8 @foo="bar", @schedule_id="911192e9d8e66f4040a26cbb65cb4093">
+Test worker run #<TestWorker:0x000001028729b0 @foo="bar", @schedule_id="1469b43b9fc95128ecf8b0e7c23c30a7">
+Test worker run #<TestWorker:0x00000102872960 @foo="bar", @schedule_id="d8a2f20de008fa74e58ac410e4c3bc5d">
+Test worker run #<TestWorker:0x00000100f64b30 @foo="bar", @schedule_id="5dd35626957bb0fbd374e5bd7c177b62">
+Test worker run #<TestWorker:0x00000100f64ae0 @foo="bar", @schedule_id="3dc350e174845b1a8ca490f79631b71c">
+Test worker run #<TestWorker:0x00000100cee4f0 @foo="bar", @schedule_id="51570bd10f35148a9b586241dccda16f">
+Test worker run #<TestWorker:0x00000100cee4a0 @foo="bar", @schedule_id="900c026c0aa8b8ad703cfc96651457f6">
+Test worker run #<TestWorker:0x00000102b065c8 @foo="bar", @schedule_id="f8ffdc282814ba16797f49a637812a34">
+Test worker run #<TestWorker:0x00000102b06578 @foo="bar", @schedule_id="ce85ea4b03ae12bc58b444e88f00448c">
+Test worker run #<TestWorker:0x00000100fc2ff0 @foo="bar", @schedule_id="dbf95442c73354988581f1e0f46bd01a">
+Test worker run #<TestWorker:0x00000100fc2fa0 @foo="bar", @schedule_id="7d9e59d2a877f1f693b212099a0c98e7">
+Test worker run #<TestWorker:0x0000010281dff0 @foo="bar", @schedule_id="3383ed85f110e1564cb9cad4581e95fc">
+Test worker run #<TestWorker:0x0000010281df50 @foo="bar", @schedule_id="4914ebeea477d6364b396239f407320f">
+Test worker run #<TestWorker:0x00000102ae4630 @foo="bar", @schedule_id="6d3230619373b8af7f611e2e71921575">
+Test worker run #<TestWorker:0x00000102ae45e0 @foo="bar", @schedule_id="56c6bf5d4537b8484de5d0634a47494a">
+Test worker run #<TestWorker:0x00000100e3b1c8 @foo="bar", @schedule_id="dd1638248f88d3c7f12cc63959e5173e">
+Test worker run #<TestWorker:0x00000100e3fd90 @foo="bar", @schedule_id="e8bf3abcc19c611bd2688c8cf9dce222">
+Test worker run #<TestWorker:0x00000100e3fd40 @foo="bar", @schedule_id="0aed940a940b39ff0e442ebdb489159e">
+Test worker run #<TestWorker:0x00000100fbb340 @foo="bar", @schedule_id="64162ec5c64a89052763e7b7e5df094b">
+Test worker run #<TestWorker:0x00000100fbb2f0 @foo="bar", @schedule_id="451254cf5bf1baaddba5cbb7bba32edf">
+Test worker run #<TestWorker:0x000001029ddea8 @foo="bar", @schedule_id="4e742f13c1fbd11fbd3ff6cdedbd1e1d">
+Test worker run #<TestWorker:0x000001029e2a70 @foo="bar", @schedule_id="d24d3ed4f0befd2a2118559a738b011f">
+Test worker run #<TestWorker:0x000001029e2a20 @foo="bar", @schedule_id="8bda70e467c96b31873518538841ed8c">
+Test worker run #<TestWorker:0x000001029fd1e0 @foo="bar", @schedule_id="3b65971ebbe2a2274aeeb6383f803526">
+Test worker run #<TestWorker:0x000001029fd190 @foo="bar", @schedule_id="f9312f5db1be65791babf4d4707ba1f2">
+Test worker run #<TestWorker:0x000001013f83e0 @foo="bar", @schedule_id="eec31629f6c768913f5970510893c0d2">
+Test worker run #<TestWorker:0x000001013f8390 @foo="bar", @schedule_id="fe07ec3e8cf867e01813b5e8edcf34ed">
+Test worker run #<TestWorker:0x00000101df58c0 @foo="bar", @schedule_id="738b087069b1c3d35179d7397bc4e88d">
+Test worker run #<TestWorker:0x00000101df5870 @foo="bar", @schedule_id="ae20539fb3fe4630c153cf5ca3d1301b">
+Test worker run #<TestWorker:0x00000101793798 @foo="bar", @schedule_id="14dcf7fd42356bc1229e0e9e1d7479b7">
+Test worker run #<TestWorker:0x00000101793748 @foo="bar", @schedule_id="6f79412919928de38e06aecabff9a4ff">
+Test worker run #<TestWorker:0x000001028ec760 @foo="bar", @schedule_id="4e80cb573119dcdd1a58a2233840473a">
+Test worker run #<TestWorker:0x000001028ec710 @foo="bar", @schedule_id="5f18ab8ca05fb229d71596f9f682135c">
+Test worker run #<TestWorker:0x000001016372f0 @foo="bar", @schedule_id="cab998626440a501b453276a6191494a">
+Test worker run #<TestWorker:0x000001016372a0 @foo="bar", @schedule_id="def095270b6d32c4a628129724a68bdc">
+Test worker run #<TestWorker:0x00000102899df8 @foo="bar", @schedule_id="e809ab00c84d04ae496f39001efd1791">
+Test worker run #<TestWorker:0x00000102899da8 @foo="bar", @schedule_id="b00992e133ec0d6dbd9b8c418c3c13e5">
+Test worker run #<TestWorker:0x000001014e66a8 @foo="bar", @schedule_id="1e1c80b83832f0219b08b7a3a840ace6">
+Test worker run #<TestWorker:0x000001014e6658 @foo="bar", @schedule_id="b315497c70c7367c1065818ce318d975">
+Test worker run #<TestWorker:0x00000101bf9fd0 @foo="bar", @schedule_id="49251810e92b3b747178f23ece7b3ffa">
+Test worker run #<TestWorker:0x00000101bf9f80 @foo="bar", @schedule_id="659b3d2cf137e600722b2a245380b07a">
+Test worker run #<TestWorker:0x000001015fe5e0 @foo="bar", @schedule_id="8f20b331574d48f68fdfc8f7436cb670">
+Test worker run #<TestWorker:0x000001015fe590 @foo="bar", @schedule_id="11be4eca4e7dcc5096450ed25ab5eae4">
+Test worker run #<TestWorker:0x00000101dff2d0 @foo="bar", @schedule_id="5f8690f6c365a9fc195ced2ad4de99bf">
+Test worker run #<TestWorker:0x00000101dff280 @foo="bar", @schedule_id="7fe369b39873021a882cc518ef3905ee">
+Test worker run #<TestWorker:0x0000010294a400 @foo="bar", @schedule_id="1bd29396d7619016b744dc73b466268d">
+Test worker run #<TestWorker:0x0000010294a3b0 @foo="bar", @schedule_id="5a04943f40b36415b2ea5da843aeca21">
+Test worker run #<TestWorker:0x000001028820e0 @foo="bar", @schedule_id="785753a6c81bd273005280307ee2c524">
+Test worker run #<TestWorker:0x00000102882090 @foo="bar", @schedule_id="3fad938fa4ee39625e237b3836bb3311">
+Test worker run #<TestWorker:0x000001028dec50 @foo="bar", @schedule_id="c96ee1bad18e875d04f2ec0de1c4a59f">
+Test worker run #<TestWorker:0x000001028dec00 @foo="bar", @schedule_id="9af4153d14ecad815258a2034434df54">
+Test worker run #<TestWorker:0x00000100fe75f8 @foo="bar", @schedule_id="04157db242ecacbcb0b937952dfe274a">
+Test worker run #<TestWorker:0x00000100fe75a8 @foo="bar", @schedule_id="67adadff312137459298686ba6b01e96">
+Test worker run #<TestWorker:0x00000102832d38 @foo="bar", @schedule_id="67e3340fa1985bf9ef2ee089a1771aa4">
+Test worker run #<TestWorker:0x00000102832ce8 @foo="bar", @schedule_id="c504a974592bb6aaee9a5f188072597b">
+Test worker run #<TestWorker:0x0000010292edb8 @foo="bar", @schedule_id="aea60d1c68c005de58a5fd5a059c7f72">
+Test worker run #<TestWorker:0x0000010292ed68 @foo="bar", @schedule_id="2a366d40595e9cfa7bd3117ed742bfd3">
+Test worker run #<TestWorker:0x000001015f5b20 @foo="bar", @schedule_id="1622281de3307a191e5ee63b51616cc2">

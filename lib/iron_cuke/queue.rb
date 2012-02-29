@@ -3,13 +3,18 @@ require "iron_cuke/queue_item"
 module IronCuke
 	module Queue
 	
-		def queued
-			worker_queue.values.map { |worker| worker.map { |data| data.worker } }.flatten
+		def queued(priority = 0)
+			raise ArgumentError unless priority.between?(0,2)
+			worker_queue.select{|p, workers| p >= priority}.values.map { |p| 
+				p.map { |data| 
+					data.worker 
+				} 
+			}.flatten
 		end
 	
 		def queue(worker, options)
-			options = options.merge(:priority => 0)
-			raise NotImplementedError unless (0..2).include? options[:priority]
+			options = {:priority => 0}.merge(options)
+			raise NotImplementedError unless options[:priority].between?(0,2)
 		
 			worker_queue[options[:priority]] ||= []
 			item = IronCuke::QueueItem.new(worker, options)
