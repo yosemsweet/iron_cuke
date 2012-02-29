@@ -2,4 +2,4 @@
 .bundle
 Gemfile.lock
 pkg/*
-iron_cuke.log
+iron_cuke.log*

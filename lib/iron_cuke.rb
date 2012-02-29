@@ -22,6 +22,7 @@ module IronCuke
 			clear_schedules
 		end
 		
+		private:
 		def run_scheduled_workers(time)
 			to_execute = scheduled_queue.keys.select { |run_at| run_at <= time }
 			to_execute.each do |k|
