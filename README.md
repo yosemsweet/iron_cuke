@@ -19,15 +19,15 @@ Include the gem in your Gemfile within the :test group:
 
 ```ruby
 group :test do
-  gem "iron_cuke"
+  gem 'iron_cuke'
 end
 ```
 
 I'm assuming you also have cucumber-rails and iron_worker gems installed, if not iron_cuke won't do you much good:
 
 ```ruby
-  gem "cucumber-rails", :group => :test
-  gem "iron_worker"
+  gem 'cucumber-rails', :group => :test
+  gem 'iron_worker'
 ```
 Now run:
 
